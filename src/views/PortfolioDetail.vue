@@ -25,7 +25,7 @@
       <div v-else>Loading...</div>
       
      
-      Details test {{ props.id }}
+     
     </div>
   </div>
 

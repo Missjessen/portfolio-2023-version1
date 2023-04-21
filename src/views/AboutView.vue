@@ -61,14 +61,15 @@
       </div>
     </div>
 
-    <div class="midt-2">
+    <!-- <div class="midt-2">
       <div class="midt-2-container">
         stuff
       </div>
-    </div>
+    </div> -->
+    <div class="tekst">
     <div class="b-boks">
-            <h6>A I love being creative in so many ways!</h6>
-          </div>
+            <h6 class="love">A I love being creative in so many ways!</h6>
+          </div></div>
     
 
 <div class="grid grid-cols-3 gap-4">
@@ -76,42 +77,24 @@
     data-te-animation-init
     data-te-animation-start="onScroll"
     data-te-animation="[fade-in_1s_ease-in-out]"
-    src="https://tecdn.b-cdn.net/img/new/standard/city/041.webp"
+    src="@/assets/dåb.jpeg"
     class="rounded" />
   <img
     data-te-animation-init
     data-te-animation-start="onScroll"
     data-te-animation="[fade-in_1s_ease-in-out]"
     data-te-animation-delay="300"
-    src="https://tecdn.b-cdn.net/img/new/standard/city/042.webp"
+    src="@/assets/kokken.jpeg"
     class="rounded" />
   <img
     data-te-animation-init
     data-te-animation-start="onScroll"
     data-te-animation="[fade-in_1s_ease-in-out]"
     data-te-animation-delay="500"
-    src="https://tecdn.b-cdn.net/img/new/standard/city/043.webp"
+    src="@/assets/kage2.jpeg"
     class="rounded" />
-  <img
-    data-te-animation-init
-    data-te-animation-start="onScroll"
-    data-te-animation="[fade-in_1s_ease-in-out]"
-    src="https://tecdn.b-cdn.net/img/new/standard/city/044.webp"
-    class="rounded" />
-  <img
-    data-te-animation-init
-    data-te-animation-start="onScroll"
-    data-te-animation="[fade-in_1s_ease-in-out]"
-    data-te-animation-delay="300"
-    src="https://tecdn.b-cdn.net/img/new/standard/city/045.webp"
-    class="rounded" />
-  <img
-    data-te-animation-init
-    data-te-animation-start="onScroll"
-    data-te-animation="[fade-in_1s_ease-in-out]"
-    data-te-animation-delay="500"
-    src="https://tecdn.b-cdn.net/img/new/standard/city/046.webp"
-    class="rounded" />
+
+
 </div>
 
    
@@ -129,6 +112,10 @@ main {
   margin-top:-110px; /* skub header op under menu */
   padding-top: 110px;
 position: relative;
+}
+
+.rounded{
+  justify-content: space-between;
 }
 
 .top {
@@ -175,7 +162,7 @@ position: relative;
 }
 .l-boks h6{
   font-family: hoefler;
-font-size: 4rem;
+font-size: 7rem;
 }
 
 .info {
@@ -195,21 +182,27 @@ font-size: 4rem;
 
 }
 
-.b-boks{
+.b-boks h6{
 
   color: #f6f6f6;
-font-size: 50px;
+font-size: 70px;
 font-family: hoefler;
-font-weight: 900;
+font-weight: 700;
 display: flex;
 text-align: center;
-align-content: center;
+align-items: center;
+
+
 }
 .venstre-tekst{}
 
 .højre-tekst{
   text-align: end;
 
+}
+.love{
+  display: flex;
+  justify-content: center;
 }
 
 .billede{

@@ -5,16 +5,14 @@
         <div class="midt-2-container">
             <h5>Contact</h5>
             
-            <div>
-                <p class="mail"> <img src="@/assets/mail5.png" alt="">
-                    Mail : Nsj@pc.dk</p>
-    
-                <p class="mobil"><img src="@/assets/mobil5.png" alt="">Phone : 31125132</p>
-                <a href="https://www.linkedin.com/in/nanna-jessen-7a033048/"  target="_blank">
-                <p class="linkedin"><img  src="@/assets/in5.png" alt="">linkedin </p></a>
-                <a href="https://www.instagram.com/missjessen/"  target="_blank">
-                <p class="ig"><img src="@/assets/ig5.png" alt="">Instagram  </p></a>
-            </div>
+            <p class="mail"> <img src="@/assets/mail5.png" alt="">
+                Mail : Nsj@pc.dk</p>
+
+            <p class="mobil"><img src="@/assets/mobil5.png" alt="">Phone : 31125132</p>
+            <a href="https://www.linkedin.com/in/nanna-jessen-7a033048/"  target="_blank">
+            <p class="linkedin"><img  src="@/assets/in5.png" alt="">linkedin </p></a>
+            <a href="https://www.instagram.com/missjessen/"  target="_blank">
+            <p class="ig"><img src="@/assets/ig5.png" alt="">Instagram  </p></a>
         
         
             </div>
@@ -48,11 +46,10 @@
     font-family: hoefler;
     flex-direction: row;
     border: solid #FAD5ED;
-margin: 30px;
-}
 
-.midt-2-container > div{
-    display: flex;
+margin: 30px;
+  
+
 }
 
 .midt-2-container h5 {
