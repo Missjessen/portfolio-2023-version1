@@ -72,28 +72,28 @@
           </div></div>
     
 
-<div class="grid grid-cols-3 gap-4">
+<div class="grid">
   <img
-    data-te-animation-init
-    data-te-animation-start="onScroll"
-    data-te-animation="[fade-in_1s_ease-in-out]"
+    
     src="@/assets/dåb.jpeg"
     class="rounded" />
   <img
-    data-te-animation-init
-    data-te-animation-start="onScroll"
-    data-te-animation="[fade-in_1s_ease-in-out]"
-    data-te-animation-delay="300"
+
     src="@/assets/kokken.jpeg"
     class="rounded" />
   <img
-    data-te-animation-init
-    data-te-animation-start="onScroll"
-    data-te-animation="[fade-in_1s_ease-in-out]"
-    data-te-animation-delay="500"
+
     src="@/assets/kage2.jpeg"
     class="rounded" />
+    
+    <img
 
+src="@/assets/lys.jpeg"
+class="rounded" />
+<img
+
+src="@/assets/sne.jpeg"
+class="rounded" />
 
 </div>
 
@@ -121,10 +121,7 @@ position: relative;
 .top {
 
 }
-.container-top{
- width: 100vw;
 
-}
 
 .top-container {
   /* b  ackground-color: #6A6665; */
@@ -197,9 +194,10 @@ align-items: center;
 .venstre-tekst{}
 
 .højre-tekst{
-  text-align: end;
-
+text-align: end;
 }
+
+
 .love{
   display: flex;
   justify-content: center;
@@ -297,6 +295,18 @@ align-items: center;
   align-content: center;
 
 
+}
+
+.grid {
+  display: flex;
+  height: 390px;
+  background-color: #222222;
+  justify-items: space-between;
+  padding: 20px;
+  align-content: center;
+  opacity: 80%;
+
+ 
 }
 
 

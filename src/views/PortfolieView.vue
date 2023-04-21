@@ -58,6 +58,7 @@ const { state  } = portfoliodb()
   overflow: hidden;
   margin-top:-110px; /* skub header op under menu */
   /* padding-top: 110px; */
+  opacity: 75%;
 }
 
 .pil{
