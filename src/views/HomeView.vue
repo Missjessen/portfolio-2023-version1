@@ -22,13 +22,29 @@
           </p>
           <span class="hero-knap">
             
-            
-            <img src="@/assets/piltop2.png" alt=""> <!-- icon pil -->
+            <router-link id="artboard-link" to="/about">
+
+            <img src="@/assets/piltop2.png" alt="">
+            <span>
+              About me 
+            </span> 
+            </router-link>  
+             
+            <a  id="artboard-link" style="margin-left:10px;" href="https://indd.adobe.com/view/036b8602-76ff-40de-b0ce-dc8868fa4855" target="_blank">
+             
+            <img src="@/assets/piltop2.png" alt="">
+            <span>
+              CV 
+            </span> 
+        
+          </a>
+
+        <!--     <img src="@/assets/piltop2.png" alt=""> 
             <span class="am1">ABOUT ME</span>
           </span>
           <span class="hero-knap">
-            <img src="@/assets/piltop2.png" alt=""> <!-- icon pil -->
-            <span class="am1">DOWNLOAD CV</span>
+            <img src="@/assets/piltop2.png" alt=""> 
+            <span class="am1">DOWNLOAD CV</span> -->
           </span>
         </div>
      
@@ -41,7 +57,17 @@
     <div class="what-i-do-container">
       <div class="widc-left">
         <h3 id="wid-h3">WHAT I <span id="wid-h3-color2">DO</span></h3>
-        <a id="wid-h3-a" href="/"><img src="@/assets/pil-44.png" alt=""> Artboard</a>
+        
+        <router-link id="artboard-link" to="/portfolie">
+
+          <img src="@/assets/pil-44.png" alt="">
+          <span>
+            Artboard 
+          </span> 
+        </router-link>  
+         
+
+
       </div>
       <div class="widc-right">
         <div class="widc-right-box">
@@ -153,7 +179,11 @@
   align-items: center;
   width:100%;
 }
-
+#artboard-link {
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+}
 .heroo-container-rigth {
  width:60%;
  font-family: hoefler;
@@ -235,7 +265,8 @@ align-items: baseline;
 
 .widc-left a img { /* størrelse på pilen 45 */
   height:40px;
-  margin-top: 30px;
+  /* margin-top: 30px; */
+  margin-right:15px;
 }
 
 .work-left {

@@ -22,7 +22,7 @@
       
     <div class="pil">
       <!-- part 3 -->
-      <RouterLink :to="{ name:'portfoliodetail', params: { id: item.id }}"><img  src="@/assets/pil-45.png" alt=""></RouterLink> 
+      <RouterLink :to="{ name:'portfoliodetail', params: { id: item.id }}" id="pil-bot"><img id="pilpil" src="@/assets/pil-45.png" alt=""></RouterLink> 
     </div>
      
     </div>
@@ -62,11 +62,21 @@ const { state  } = portfoliodb()
 
 .pil{
   width: 100px;
-  display: flex-end;
+  min-height: 100%;
+    align-items: end;
   justify-items: end;
+ 
 
    display: block;
+   display: flex;
   
+}
+
+#pil-bot{
+  display: flex-end;
+  justify-items: end;
+  height:40px;
+   display: flex;
 }
 
 .hero video {
@@ -118,6 +128,14 @@ const { state  } = portfoliodb()
 
 
     text-transform: uppercase;
+  }
+
+  h4 {
+    padding: 0.25rem 0.5rem;
+  }
+
+  #pilpil{
+    max-width:50px;
   }
 
   .Web {

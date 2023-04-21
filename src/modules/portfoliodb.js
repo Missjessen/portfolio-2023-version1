@@ -23,18 +23,12 @@ const getPortfolio = () => {
     },
     {
       id: 3,
-      title: "Rebranding a barbeque competition",
-      subtitle: "Long Horn",
-      category: "Rebranding competition",
-      image: "/src/assets/dope.jpg",
-      text: ""
-    },
-    {
-      id: 4,
       title: "Non-profit organisation",
       category: "Rebranding Organdonation",
       image: "/src/assets/bumle1.jpg",
-      text: ""
+      text: "",
+      description: "photoshop project, with a toy car"
+
     }
   ])
 

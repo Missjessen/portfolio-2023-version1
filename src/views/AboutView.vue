@@ -42,8 +42,18 @@
     <div class="midt">
       <div class="midt-container">
         <div class="links">
-          <a class="load" href=""><img src="@/assets/piltop2.png" alt="">View cv</a>
-          <a class="video" href=""><img src="@/assets/piltop2.png" alt="">Watch video cv</a>
+          <a class="load" href="https://indd.adobe.com/view/036b8602-76ff-40de-b0ce-dc8868fa4855"  target="_blank"><img src="@/assets/piltop2.png" alt="">
+            <span class="center-text">
+              View CV
+             
+            </span>
+          </a>
+          <a class="video" href="https://youtu.be/bgMTI5HhPV8" target="_blank"><img src="@/assets/piltop2.png" alt="">
+            <span class="center-text">
+              Watch video cv
+            </span>
+            
+          </a>
         </div>
         <div class="børn">
           <img src="@/assets/ew.jpg" alt="">
@@ -146,6 +156,11 @@ position: relative;
  flex-wrap: wrap;
 }
 
+.center-text {
+  display: flex;
+  padding-left:10px;
+  align-items: center;
+}
 
 .l-boks{
   height: 200px;
@@ -169,13 +184,14 @@ font-size: 4rem;
   border-radius: 2rem;
   height: auto;
   padding:20px 30px;
-  width: 60%;
+  width: 80%;
   text-justify: distribute-all-lines;
   display: flex;
   justify-content: space-between;
   border: 1px solid #525050;
   font-family: hoefler;
-  font-size: 1rem;
+  font-size: 2rem;
+
 
 }
 
@@ -201,11 +217,12 @@ align-content: center;
  /*  width: 40%; */
 
   padding:40px;
+  margin: 0 0 0 100px;
 }
 
 .billede img {
   border-radius: 2rem;
-  height:700px;
+  height:600px;
   border-color: black;
   border: 1px solid ;
   position: relative;
@@ -240,9 +257,10 @@ align-content: center;
 
 }
 .børn img{
-  height: 110%;
+  height: 100%;
   width: 190%;
   border-radius: 2rem;
+  margin: 0 0 40px 40px;
 
 
 

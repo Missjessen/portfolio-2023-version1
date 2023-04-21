@@ -14,14 +14,17 @@ import { RouterLink, RouterView } from 'vue-router'
     <div class="wrapper">
 
       <nav>
+   
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/portfolie">Portfolie</RouterLink>
+
         <div class="logo">
           <img alt="nj-logo" class="logo-img" src="@/assets/logo-web3.png" :class="{bigLogo: logoSize, smallLogo: !logoSize}" style="height: auto" />
         </div>
-      
+     
         <RouterLink to="/about">About me</RouterLink>
         <RouterLink to="/kontakt">Kontakt</RouterLink>
+     
       </nav>
     </div>
   </header>
@@ -113,7 +116,7 @@ header {
 
 .logo {
   display: block;
-  margin: 0 auto; /* 2rem */
+  /* margin: 0 auto; */ /* 2rem */
   height:40px;
   position: relative
 
@@ -127,16 +130,20 @@ header {
 nav {
   width: 100%;
   font-size: 15px;
-  
+  margin-top: 1rem; 
   text-align: end;
   /* margin-top: 2rem; */
   position: relative;
   z-index: 123900123;
+
+  display: flex;
+    text-align: left;
+    justify-content: space-between;
   
 }
 
 nav a.router-link-exact-active {
-  /* color: var(--color-text); */
+   color: var(--color-text); 
   
 }
 
@@ -185,13 +192,15 @@ nav a:first-of-type {
   nav {
     display: flex;
     text-align: left;
-    
-    margin-left: -1rem;
+    justify-content: space-between;
+    font-family: hoefler;
     font-size: 1.5rem;
-font-family: hoefler;
+  /*   margin-left: -1rem;
+   
+    
 
     padding: 0.25rem 0;
-    margin-top: 1rem;
+   */
   }
 }
 </style>
