@@ -3,7 +3,7 @@
         <section class="top">
             <div class="midt-2">
         <div class="midt-2-container">
-            <h5>Contact</h5>
+            <h5>Kontakt</h5>
             
             <p class="mail"> <img src="@/assets/mail5.png" alt="">
                 Mail : Nsj@pc.dk</p>
@@ -56,7 +56,7 @@ margin: 30px;
     font-size: 70px;
     display: flex;
     justify-content: center;
-    font-weight: 900;
+    font-weight: 100;
 
 }
 

@@ -3,31 +3,33 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 
+
 </script>
 
 <template >
   
   <header>
     
-<!--     <img alt="nj-logo" class="logo" src="@/assets/logo-web3.png" width="100" height="100" />
- -->
+
     <div class="wrapper">
 
       <nav>
    
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/portfolie">Portfolie</RouterLink>
+        <RouterLink to="/">FORSIDE</RouterLink>
+        <RouterLink to="/portfolie">PORTFOLIE</RouterLink>
 
         <div class="logo">
           <img alt="nj-logo" class="logo-img" src="@/assets/logo-web3.png" :class="{bigLogo: logoSize, smallLogo: !logoSize}" style="height: auto" />
         </div>
      
-        <RouterLink to="/about">About me</RouterLink>
-        <RouterLink to="/kontakt">Kontakt</RouterLink>
+        <RouterLink to="/om-mig">OM MIG</RouterLink>
+        <RouterLink to="/kontakt">KONTAKT</RouterLink>
      
       </nav>
     </div>
   </header>
+
+  
 
   <!-- must do this for fade out to work -->
   <RouterView  v-slot="{ Component }">
@@ -35,10 +37,6 @@ import { RouterLink, RouterView } from 'vue-router'
       <component :is="Component" />
     </transition>
   </RouterView>
-
-<!-- <Transition mode="out-in" name="slide-fade"> -->  <!-- no name, slide-fade, bounce -->
-<!--     <RouterView />
-  </Transition>   -->
 
 </template>
 
@@ -53,7 +51,7 @@ import { RouterLink, RouterView } from 'vue-router'
 
 .v-enter-active,
 .v-leave-active {
-  transition: opacity 1.5s ease;
+  transition: opacity 0.3s ease;
 }
 
 .v-enter-from,
@@ -61,16 +59,12 @@ import { RouterLink, RouterView } from 'vue-router'
   opacity: 0;
 }
 
-/*
-  Enter and leave animations can use different
-  durations and timing functions.
-*/
 .slide-fade-enter-active {
   transition: all 0.3s ease-out;
 }
 
 .slide-fade-leave-active {
-  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+  transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);
 }
 
 .slide-fade-enter-from,
@@ -81,10 +75,10 @@ import { RouterLink, RouterView } from 'vue-router'
 
 
 .bounce-enter-active {
-  animation: bounce-in 0.5s;
+  animation: bounce-in 0.3s;
 }
 .bounce-leave-active {
-  animation: bounce-in 0.5s reverse;
+  animation: bounce-in 0.3s reverse;
 }
 @keyframes bounce-in {
   0% {
@@ -102,7 +96,7 @@ import { RouterLink, RouterView } from 'vue-router'
 /* v-transition end */
 
 
-header {
+.header {
   line-height: 2;
   height: 50px;
   max-width: 100%;
@@ -139,6 +133,7 @@ nav {
   display: flex;
     text-align: left;
     justify-content: space-between;
+    margin: 1.8rem 1.25rem 0 2.2rem;
   
 }
 
@@ -149,13 +144,17 @@ nav a.router-link-exact-active {
 
 nav a.router-link-exact-active:hover {
   background-color: transparent;
+  
 }
+
 
 nav a {
   display: inline-block;
   padding: 0 1rem;
   height:35px;
   color:#FAD5DD;
+  margin: 0 15px 0 15px;
+  padding: 0 15px 0 15px;
  /*  border-left: 1px solid var(--color-border); */
 }
 
@@ -195,12 +194,12 @@ nav a:first-of-type {
     justify-content: space-between;
     font-family: hoefler;
     font-size: 1.5rem;
-  /*   margin-left: -1rem;
+     /* margin-left: -1rem;
    
     
 
-    padding: 0.25rem 0;
-   */
+    padding: 0.25rem 0; */
+   
   }
 }
 </style>

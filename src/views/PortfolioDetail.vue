@@ -1,6 +1,6 @@
 <template>
   <div>
-     <button @click="goBack()">Go Back</button>
+     <!-- <button @click="goBack()">Go Back</button> -->
     <div>
       <div class="portfolio-item" v-if="portfolioDetails" >
         <h4 class="top">{{ portfolioDetails.title }}</h4>
@@ -67,14 +67,14 @@ const router = useRouter()
    }
 
   .portfolio-container {
-    display: flex;
+    /* display: flex; */
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     align-content: center; 
   }
   .portfolio-item {
-    margin: 1rem;
+    margin: 3rem 2rem 0 2rem;
     padding: 1rem;
  
    background-color: #000000;
@@ -102,10 +102,13 @@ const router = useRouter()
   h4 {
     font-size:40px;
     color:#f6f6f6;
+    padding: 0 0 0 1.5rem;
   }
 
   h6 {
     margin:0 0 30px 0;
+    padding: 0 0 0 1.5rem;
+    font-style: oblique;
 
   }
 
@@ -133,38 +136,17 @@ const router = useRouter()
   }
 
   .category {
+    display: flex;
     display: inline-block;
     padding: 0.25rem 0.5rem;
-   
     font-size: 12px;
     font-weight: 700;
-
-
     text-transform: uppercase;
   }
 
-  .Web {
-    color: #cd5c0b;
-    border-left: 2px solid #cd5c0b;
-  }
 
-  .Video {
-    color: #23b062;
-    border-left: 2px solid #23b062;
-  }
 
-  .Photoshop {
-    color: #2f4ccb;
-    border-left: 2px solid #2f4ccb;
-  }
 
-  .incomplete {
-    color: #bc0c0c;
-  }
-
-  .complete {
-    color: #14b314;
-  }
 
 
 </style>

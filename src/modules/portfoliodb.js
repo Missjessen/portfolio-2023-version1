@@ -4,31 +4,32 @@ const getPortfolio = () => {
   const state = ref([
     {
       id: 1,
-      title: "Rebranding of a non-profit organizations",
+      title: "Rebranding af en  non-profit organisation ",
       subtitle: "Organdonation",
       category: "Rebranding Organdonation",
-      /* image: "https://placehold.jp/150x150.png", */
-      image: "/src/assets/organdonation.png",
+      image: "../assets/organdonation.png",
       
-      description: "My partner and I wanted to create a rebrand of the organizations, that was designed to get young people to take a stand. their current branding was not very attention grabbing for young people. according to statistics young people do not take a stand and we wanted to change that in our rebranding. In the new logo we designed, we used a navigation symbol to illustrate a new location, as well as a heart cardiogram regaining its strength.   "
+      description: "Min partner og jeg ønskede at skabe et nyt branding af organisationen, der skulle få de unge til at tage stilling. Deres nuværende branding var ikke særlig opsigtvækkende for de unge. ifølge statistikker tager de unge ikke stilling, og det ønskede vi at ændre med vores rebranding. I det nye logo vi designede, brugte vi et navigationssymbol til at illustrere en ny placering samt et hjertekardiogram, der genvinder sin styrke."
     },
     {
       id: 2,
-      title: "Rebranding a barbeque competition",
+      title: "Rebranding af en barbeque konkurrence",
       subtitle: "Long Horn",
-      category: "Rebranding competition",
-      image: "/src/assets/BBQ folder.png",
+      category: "Rebranding af event",
+      image: "../assets/BBQ_folder.png",
       text: "",
-      description: "Long horn wanted to get more visitors to their competition. They previously had a Viking as a mascot, which they still wanted to be part of their branding. The branding focused was, to creat a link between the two themes BBQ and Viking. The Viking was our front figure, so we added something from the BBQ world to the logo. The logo therefore illustrates a flavor molecule, that is formed during a BBQ process (Syringol). "
+      description: "Long horn ønskede at få flere besøgende til deres konkurrence. De havde tidligere haft en viking som maskot, som de stadig ønskede skulle være en del af deres branding. Branding fokus var, at skabe en sammenhæng mellem de to temaer BBQ og Viking. Vikingen var vores frontfigur, så vi tilføjede noget fra BBQ-verdenen til logoet. Logoet illustrerer derfor et smagsmolekyle, som dannes under en BBQ-proces (Syringol)."
+
+      
     },
     {
       id: 3,
       title: "Bumle",
       subtitle: "Photoshop",
-      category: "Editing",
-      image: "/src/assets/bumle1.jpg",
+      category: "Billederedigering",
+      image: "../assets/bumle1.jpg",
       text: "",
-      description: "Photoshop project, with a toy"
+      description: "Photoshop projekt af et lejetøj"
 
     }
   ])
